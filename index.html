@@ -20,10 +20,10 @@
 <meta itemprop="image" content="assets/images/sharing-card.png">
 
 <!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://ossportfolio.netlify.app">
+<!-- <meta property="og:url" content="https://ossportfolio.netlify.app">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Oti Desmond's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."> -->
 
 <!-- Reference screenshot of updated site's header in content -->
 <meta property="og:image" content="assets/images/sharing-card.png">
@@ -236,8 +236,9 @@
                 bringing ideas to life.
               </p>
             </div>
-            <form action="#" name="contact" method="POST" netlify>
+            <form action="https://api.web3forms.com/submit" method="POST" name="contact"> 
               <div class="form-field">
+                 <input type="hidden" name="access_key" value="6d71e050-4edb-49ea-b4b4-66adc34b5a0f">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required />
               </div>
@@ -257,6 +258,7 @@
               </div>
               <button type="submit" class="btn btn-cta">Send</button>
             </form>
+          
           </div>
         </div>
       </section>

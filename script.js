@@ -110,25 +110,25 @@ logosWrappers.forEach(async (logoWrapper, i) => {
     logos[2].classList.add("hide", "to-bottom");
   }, 5600);
   yearEl.textContent = new Date().getFullYear();
-
-const handleSubmit = (event) => {
-  event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-  
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
-};
-
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
 });
+// const handleSubmit = (event) => {
+//   event.preventDefault();
+
+//   const myForm = event.target;
+//   const formData = new FormData(myForm);
+  
+//   fetch("/", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//     body: new URLSearchParams(formData).toString(),
+//   })
+//     .then(() => console.log("Form successfully submitted"))
+//     .catch((error) => alert(error));
+// };
+
+// document
+//   .querySelector("form")
+//   .addEventListener("submit", handleSubmit);
+// });
 
 
